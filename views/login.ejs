@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./login.js" defer></script>
+    <link rel="stylesheet" href="login.css">
+ <title>Document</title>
+</head>
+<body>
+    <!-- <nav>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+    </nav> -->
+
+    <h1>MONGOO</h1>
+
+
+    <div class="register">
+        <h1>Register</h1>
+        <form action="/users/register" method="POST">
+            <input type="text" name="name" id="input-name"/>
+            <label for="name">Name</label>
+            <input type="password" name="password" id="input-password"/>
+            <label for="password">Password</label>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    
+    <div class="login">
+        <h1>Login</h1>
+        <form action="/users/login" method="POST">
+            <input type="text" name="name" id="input-name"/>
+            <label for="name">Name</label>
+            <input type="password" name="password" id="input-password"/>
+            <label for="password">Password</label>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>

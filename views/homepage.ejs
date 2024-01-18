@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    HELLOOOOOOOOOOOO <b><%= name %></b>
+
+    <div>
+        <h2>ALL USERS</h2>
+        <ul>
+            <%
+                students.forEach((s)=>{
+                    %><li><%= s.name %></li><%
+                })
+            %>
+        </ul>
+    </div>
+
+    <div class="update">
+        <h1>UPDATE</h1>
+        <form action="/users/update" method="post">
+            <input type="text" name="from" id="input-from" placeholder="from"/>
+            <input type="text" name="to" id="input-to" placeholder="to"/>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="delete">
+        <h1>DELETE</h1>
+        <form action="/users/delete" method="post">
+            <input type="text" name="name" id="input-name" placeholder="name"/>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
